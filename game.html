@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trick21</title>
+    <link rel="stylesheet" type="text/css" href="Style/style.css">
+    <link rel="icon" href="Images/logo.png" type="image/x-icon">
+</head>
+<body class="body">
+    <header class="navbar">
+        <div class="navbar-left">
+            <img src="Images/logo.png" alt="Game Logo" class="logo" />
+            <span class="game-name">Card Mind Reader</span>
+        </div>
+        <div class="navbar-right">
+            <a href="index.html" class="nav-btn">Main Menu</a>
+        </div>
+    </header>
+    <h1 id="firstline" class="welcome-section h1">Now, you will choose your card. Click on the "Reveal Card" to start</h1>
+    <h1 id="secondline" class="welcome-section h1" style="display: none;">Choose your card and click on "Continue"</h1>
+    <h1 id="subdeck-choice" class="welcome-section h1" style="display: none;">Which SubDeck contains your card? Click on "SubDeck 1", "SubDeck 2", "SubDeck 3"</h1>
+    <h1 id="subdeck-choice" class="welcome-section h1" style="display: none;">Which SubDeck contains your card? Click on "SubDeck 1", "SubDeck 2", "SubDeck 3"</h1>
+    <h1 id="final-reveal" class="welcome-section h1" style="display: none;">Here is your card!!! GUESSED IT</h1>
+    <h2 id="sb1" class="subdeck" style="display: none;">SubDeck 1</h2>
+    <div id="card-container" class="deck">
+        <div class="card" id="card1"></div>
+        <div class="card" id="card2"></div>
+        <div class="card" id="card3"></div>
+        <div class="card" id="card4"></div>
+        <div class="card" id="card5"></div>
+        <div class="card" id="card6"></div>
+        <div class="card" id="card7"></div>
+    </div>
+    <h2 id="sb2" class="subdeck" style="display: none;">SubDeck 2</h2>
+    <div id="card-container" class="deck">
+        <div class="card" id="card8"></div>
+        <div class="card" id="card9"></div>
+        <div class="card" id="card10"></div>
+        <div class="card" id="final-card"></div>
+        <div class="card" id="card12"></div>
+        <div class="card" id="card13"></div>
+        <div class="card" id="card14"></div>
+    </div>
+    <h2 id="sb3" class="subdeck" style="display: none;">SubDeck 3</h2>
+    <div id="card-container" class="deck">
+        <div class="card" id="card15"></div>
+        <div class="card" id="card16"></div>        
+        <div class="card" id="card17"></div>
+        <div class="card" id="card18"></div>    
+        <div class="card" id="card19"></div>
+        <div class="card" id="card20"></div>
+        <div class="card" id="card21"></div>    
+    </div>
+    <div class="button-container">
+        <button id="reveal-button" class="btn">Reveal Cards</button>
+        <button id="reset-button" class="btn" style="display: none;">Reset Game</button>
+        <button id="continue-button" class="btn" style="display: none;">Continue</button>
+        <button id="subdeck1-button" class="btn" style="display: none;">SubDeck 1</button>
+        <button id="subdeck2-button" class="btn" style="display: none;">SubDeck 2</button>
+        <button id="subdeck3-button" class="btn" style="display: none;">SubDeck 3</button>
+    </div>
+    <script src="game.js"></script>
+</body>       
+</html>

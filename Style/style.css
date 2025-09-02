@@ -1,0 +1,183 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: #e2e7e7;
+  border-bottom: 2px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 26px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+  margin-right: 12px;
+  border-radius: 50%;
+}
+
+.game-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 16px;
+}
+
+.nav-btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #2980b9;
+  color: white;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  height: 28px;
+  width: 40px ;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.nav-btn:hover {
+  background-color: #1c5980;
+}
+
+.body{
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+  background-size: 110%;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+}
+.subdeck {
+  text-align: center;
+  font-size: 24px;
+  color: #000000;
+  margin-top: 20px;
+}
+#welcome-section, .welcome-section {
+  text-align: center;
+  padding: 50px 20px;
+  margin-top: 50px;
+}
+#welcome-section h1, .welcome-section h1 {
+  font-size: 56px;
+  color: #000000;
+}
+#welcome-section p, .welcome-section p {
+  font-size: 38px;
+  color: #000000;
+}
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 600px;
+  font-size: xx-large;
+  font-family: 'Courier New', Courier, monospace;
+}
+.deck {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 40px;
+}
+.card.highlight {
+  animation: pulse 1s infinite;
+  border: 3px solid gold;
+  box-shadow: 0 0 20px gold;
+  transform: scale(1.1);
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 10px gold; }
+  50% { box-shadow: 0 0 20px gold; }
+  100% { box-shadow: 0 0 10px gold; }
+}
+
+.card {
+  width: 100px;
+  height: 180px;
+  background-color: white;
+  border: 2px solid #333;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 50px;
+  cursor: pointer;
+  background-image: url('cardbg.jpg');
+  background-size: 100px 180px;
+  margin-right: 20px;
+  transition: transform(0.6s);
+  transform-style: preserve-3d;
+}
+.card.revealed { 
+  background: none;
+ }
+
+
+.btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #2980b9;
+  color: white;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  height: 48px;
+  width: 96px ;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.3);
+}
+@media screen and (max-width: 500px) {
+  .deck {
+    flex-direction: row;
+    align-items: center;
+  }
+  .card {
+    width: 30px;
+    height: 50px;
+    margin-right: 1px;
+    background-size:30px 50px;
+    font-size: 18px;
+  }
+}
+
+.btn:hover {
+  background-color: #1c5980;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  gap: 30px;
+}
