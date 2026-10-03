@@ -35,7 +35,7 @@ The JavaScript version reimplements this same column-split/merge logic as a full
 Since this is a static client-side project, no build step or server is required:
 
 ```bash
-git clone <your-repo-url>
+git clone (https://github.com/Serge-EH77/Trick21.git)
 cd 21-card-game
 open index.html   # or just double-click it, or serve with any static file server
 ```
